@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Old+Standard+TT&display=swap');
+/*import fonts etc */
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Great Vibes';
+  color: rgb(255, 255, 255);
+}
+.navbar{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(52, 53, 53);
+  animation: navbar-load 650ms ease-in-out;
+}
+.navbar-container-title-logo {
+  margin: auto 5px;
+}
+.navbar-title{
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 20px;
+  margin-right: 25px;
+  font-size: 1.9rem;
+  font-weight: 100;
+  cursor: default;
+}
+.navbar-logo {
+  display: inline-block;
+}
+.navbar-container-list {
+display: block;
+}
+/*ul to .navbar-list*/
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin: auto 0px;
+}
+/*li to .list-item*/
+.list-item {
+padding: 0 10px;
+margin: auto 0;
+display: block;
+}
+/*li a to .item-anchor*/
+.list-item .item-anchor{
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 80px;
+}
+/*li to .list-item*/
+.list-item:hover {
+  background-color: rgb(115, 118, 120);
+  transition: 350ms;
+}
+/*li to .list-item*/
+.list-item:active {
+  opacity: 0.8;
+}
+/*a to .item-anchor*/
+.item-anchor:hover {
+  color: goldenrod;
+  font-size: 1.7rem;
+  transition: 350ms;
+}
+/*a to .item-anchor*/
+.item-anchor:active {
+  opacity: 0.8;
+}
+.hamburger {
+  background-color: rgb(52, 53, 53);
+  border: none;
+  margin: auto 0px;
+  margin-right: 20px;  
+  cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  transition: 400ms;
+}
+.material-symbols-outlined:hover{
+  color: goldenrod;
+}
+.material-symbols-outlined:active {
+  opacity: 0.5;
+  transition: 50ms;
+  } 
+.hamburger-active {
+  transform: rotate(90deg);
+  color: goldenrod;
+  font-stretch: extra-expanded;
+}
+
+
+/*media section --> command/prompt webpage to change given condtions or below (smooth transition required - EASE-OUT-IN
+
+all testing - from initial - test and ammend accordingly*/
+@media (width: 700px) {
+  .hamburger{
+    display: block;
+    transition: 100ms
+  }
+  .navbar-list{
+    flex-direction: column;
+  
+  }
+
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Old+Standard+TT&display=swap');
+/*import fonts etc */
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Great Vibes';
+  color: rgb(255, 255, 255);
+}
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  min-width: 900px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  animation: navbar-load 500ms 650ms ease-in-out;
+  transform: translateX(-100%);
+  animation-fill-mode: forwards;
+}
+.navbar-container-title-logo {
+  margin: auto 5px;
+}
+.navbar-title{
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 20px;
+  margin-right: 25px;
+  font-size: 1.9rem;
+  font-weight: 100;
+  cursor: default;
+}
+.navbar-container-list {
+display: block;
+}
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin: auto 0px;
+}
+.list-item {
+padding: 0 10px;
+margin: auto 0;
+display: block;
+}
+.list-item .item-anchor{
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 80px;
+}
+.list-item:active {
+  opacity: 0.8;
+}
+.item-anchor:hover {
+  color: goldenrod;
+  font-size: 1.7rem;
+  transition: 350ms;
+}
+.item-anchor:active {
+  opacity: 0.8;
+}
+.hamburger {
+  background-color: rgb(52, 53, 53);
+  border: none;
+  margin: auto 0px;
+  margin-right: 20px;  
+  cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  transition: 400ms;
+}
+.material-symbols-outlined:hover{
+  color: goldenrod;
+}
+.material-symbols-outlined:active {
+  opacity: 0.5;
+  transition: 50ms;
+  } 
+.hamburger-active  {
+  animation: hamburger-toggle 300ms ease-in-out;
+  animation-fill-mode: forwards;
+  color: goldenrod;
+}
+/* Fixed navbar - into effect after nav.height passed */
+.fixed-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  background-color: rgba(52, 53, 53, 0.8);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  animation: fixed-load 250ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/*media section --> command/prompt webpage to change given condtions or below (smooth transition required - EASE-OUT-IN
+
+all testing - from initial - test and ammend accordingly*/
+/* @media (width: 700px) {
+  .hamburger{
+    display: block;
+    transition: 100ms
+  }
+  .navbar-list{
+    flex-direction: column;
+  
+  }
+
+} */
+/* keyframe queries for transition and changes */
+@keyframes navbar-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes fixed-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes hamburger-toggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(90deg);
+    transform: scale(1.4);
+  }
+  
+}
+
+/* Media queries */
+@media screen and (max-width: 850px) {
+  .navbar-container-list {
+    display: none;
+    }
+  
+}
