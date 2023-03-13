@@ -11,125 +11,81 @@
   <title>Jack of All Bakes</title>
 </head>
 <!--temp col-->
-<body style="background-color: rgba(26, 22, 22, 0.4);">
+<body>
   <!-- Navbar Start -->
-  <nav class="navbar" id="navbar">
-      <h1 class="navbar-title">Jack Of All Bakes</h1>
-      <ul class="navbar-list" id="menu">
-        <li class="list-item"><a href="#ROTD">ROTD</a></li>
-        <li class="list-item"><a href="/_Pages/index.html">Home</a></li>
-        <li class="list-item"><a href="#">About Us</a></li>
-        <li class="list-item"><a href="/_Pages/menu.html">Menu</a></li>
-        <li class="list-item"><a href="/_Pages/FAQ.html">FAQ's</a></li>
-      </ul>
-      <button id="menu-toggle">
-        <span class="material-symbols-outlined" id="menu-btn">
-        menu
-        </span>
-      </button>
-  </nav>
+    <nav class="navbar" id="navbar">
+        <h1 class="navbar-title">Jack Of All Bakes</h1>
+        <ul class="navbar-list" id="menu">
+          <li class="list-item"><a href="#ROTD">ROTD</a></li>
+          <li class="list-item"><a href="#">Home</a></li>
+          <li class="list-item"><a href="#">About Us</a></li>
+          <li class="list-item"><a href="/_Pages/menu.html">Menu</a></li>
+          <li class="list-item"><a href="/_Pages/FAQ.html">FAQ's</a></li>
+        </ul>
+        <button id="menu-toggle">
+          <span class="material-symbols-outlined" id="menu-btn">
+          menu
+          </span>
+        </button>
+    </nav>
   <!-- Navbar End -->
 
   <!-- Hero Start -->
-  <div class="intro">
-    <img class="intro-img" src="/Images/index-images/Vanilla.JPG" alt="">
-    <h1 class="intro-title">Jack Of All Bakes</h1>
-    <p class="intro-text">The finest & fluffiest bakes around!</p>
-  </div>
+    <div class="hero">
+      <img class="hero-img" src="/Images/index-images/Vanilla.JPG" alt="">
+      <h1 class="hero-title">Jack Of All Bakes</h1>
+      <p class="hero-text">The finest & fluffiest bakes around!</p>
+    </div>
   <!-- Hero End -->
 
-<br>
-  <main class="main" id="ROTD">
-    <div class="main-container">
-      <div class="title-logo-container">
-       <h2 class="title">Recipie Of The Day - ITEM</h2>
-      </div>
-      <div class="recipie-container">
-        <div class="ingredients">
-          <h3 class="sub-title">
-            Ingredients
-          </h3>
-          <br>
-          <ul class='ingredients-list'>
-            <li class="ingredients-items">Butter</li>            
-            <li class="ingredients-items">Sugar</li>            
-            <li class="ingredients-items">Eggs</li>            
-            <li class="ingredients-items">Flour</li>            
-            <li class="ingredients-items">Vanilla Essence</li>            
-            <li class="ingredients-items">Baking Powder</li>            
-            <li class="ingredients-items">Salt</li>            
-          </ul>
-        </div>
-        <div class="recipie">
-          <h3 class="sub-title">Recipie</h3>
-          <br>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt magni adipisci itaque consequatur, tenetur vitae voluptatibus quas nihil provident qui amet autem recusandae ipsa iste officiis cum corporis minima doloremque nam officia quod harum earum accusantium. Laudantium voluptatum amet blanditiis rerum, aperiam architecto repudiandae, nesciunt earum voluptatem quisquam quibusdam iusto unde velit nam impedit. Libero veniam at, harum quod voluptatem illum ratione, enim earum numquam sint, repellendus repellat nesciunt repudiandae nisi minus temporibus. Autem aliquid deleniti enim ipsum quis hic a cupiditate qui, similique asperiores, voluptas officia recusandae neque suscipit, aperiam eum corrupti expedita doloribus? Voluptas dignissimos at atque ut?
-       x   </p>
-        </div>
-      </div>
-    </div>
-
-
-    <section class="bottom-nav">
-      <div class="bottom-navbar">
-        <div class="misc-container">
-
-        </div>
-        <div class="social-media-container">
-          <span class="icon" id="icon">1</span>
-          <span class="icon" id="icon">2</span>
-          <span class="icon" id="icon">3</span>
-          <span class="icon" id="icon">4</span>
-        </div>
-      </div>
-      <button class="test">CLICK ME</button>
-    </section>
-  </main>
-
-  <!-- Recipie Of The Day v2 - Start -->
-    <section class="rotd">
-      <div>
-        <h2 class="rotd-title">Recipie Of The Day</h2>
-      </div>
-      <div class="rotd-content">
-      
-        <div class="rotd-btn-container">
-          <button class="rotd-btn" data-id="ingredients">Ingredients</button>
-          <button class="rotd-btn" data-id="method">Method</button>
-          <button class="rotd-btn" data-id="tips">Tips</button>
-        </div>
-        <div class="rotd-content-section-container">
-          <div class="rotd-content-section" id="ingredients">
-            <p class="rotd-content-text">
-              Ingredients Section
-            </p>
+  <!-- Recipe Of The Day Start -->
+    <main class="rotd" id="ROTD">
+        <h2 class="rotd-title">Recipie Of The Day - ITEM</h2>
+        <div class="content-container">
+          <div>
+            <h3 class="content-sub-title">Ingredients</h3>
+            <ul class='ingredients-list'>
+              <li class="ingredients-items">Butter</li>            
+              <li class="ingredients-items">Sugar</li>            
+              <li class="ingredients-items">Eggs</li>            
+              <li class="ingredients-items">Flour</li>            
+              <li class="ingredients-items">Vanilla Essence</li>            
+              <li class="ingredients-items">Baking Powder</li>            
+              <li class="ingredients-items">Salt</li>            
+            </ul>
           </div>
-          <div class="rotd-content-section" id="method">
-            <p class="rotd-content-text">
-              <span class="rotd-spec">Prep time:</span> 45 mins
-              <br>
-              <span class="rotd-spec">Bake time:</span> 10 mins
-              <br><br>
-              <ol class="rotd-method-list">
-                <li class="rotd-method-list-item"> Ok</li>
-              </ol>
-            </p>
-          </div>
-          <div class="rotd-content-section" id="tips">
-            <p class="rotd-content-text">
-              Tips Section
-            </p>
+          <div>
+            <h3 class="content-sub-title">Method</h3>
+            <ol class="method-list">
+              <li class="method">Step 1</li>
+              <li class="method">Step 2</li>
+              <li class="method">Step 3</li>
+              <li class="method">Step 4</li>
+              <li class="method">Step 5</li>
+              <li class="method">Step 6</li>
+              <li class="method">Step 7</li>
+            </ol>
           </div>
         </div>
-        
+
+    </main>
+  <!-- Recipe Of The Day Start End -->
+
+  <!-- Footer Start -->
+    <footer class="footer">
+      <h1 class="footer-title">Contact Us</h1>
+      <h2 class="footer-info">Please do get in touch for any questions or enquiries!</h2>
+      <div class="social-media-container">
+        <a href="mailto:simeon.j.a@outlook.com">Email: <span class="email">cakes@JOAB.com</span></a>
+        <a id="profile-link" href="https://github.com/Simeon-JAA" target="_blank">Instagram</a>
+        <a href="#">Youtube</a>
+        <a href="#">Tiktok</a>
       </div>
-    </section>
-    <!-- Recipie Of The Day - End -->
-  <button class="page-top">
-    <span class="material-symbols-outlined">
-      keyboard_double_arrow_up
-      </span>   
-  </button>
-<script src="/_Script/nav-bar.js"></script>
-<script src="/_Script/main.js"></script></body>
+    </footer>
+  <!-- Footer End -->
+
+
+  <script src="/_Script/nav-bar.js"></script>
+  <script src="/_Script/main.js"></script>
+</body>
 </html>
