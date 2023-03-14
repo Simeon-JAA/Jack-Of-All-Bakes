@@ -26,10 +26,7 @@
   height: 80px;
   padding: 0 35px;
   background-color: var(--grey-trans-2);
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-  animation: navbar-load 500ms 650ms ease-in-out;
-  transform: translateX(-100%);
-  animation-fill-mode: forwards;  
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5); 
   font-family: 'Great Vibes';
   color: rgb(255, 255, 255);
 }
@@ -81,22 +78,6 @@ padding: 0 15px;
 
 /* KEYFRAME ANIMATIONS */
   /* NAVBAR */
-@keyframes navbar-load {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes fixed-load {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 @keyframes menu-slide-in {
   0% {
     transform: translateY(-150%);
@@ -119,25 +100,19 @@ padding: 0 15px;
 @media screen and (max-width: 1000px) {
   .navbar{
     padding: 0 12px;
-    animation: navbar-load 500ms 650ms ease-in-out;
-    transform: translateX(-100%);
-    animation-fill-mode: forwards;  
   }
   .navbar .navbar-title{
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
   .navbar .navbar-list .list-item {
   padding: 0 10px;
   }
   .navbar .navbar-list .list-item a{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }  
 }
 @media screen and (max-width: 800px) {
-  .navbar{
-    animation: navbar-load 500ms 650ms ease-in-out;
-    transform: translateX(-100%);
-    animation-fill-mode: forwards;  
+  .navbar{ 
     padding: 0 20px;
   }
   .navbar .navbar-title{
