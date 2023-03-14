@@ -1,19 +1,19 @@
-const menuToggle = document.querySelector('#menu-toggle');
-const menuBtn = document.querySelector('#menu-btn');
-const menu = document.querySelector('#menu');
+const menuToggle = document.querySelector('#dropdown-menu-toggle');
+const menuBtn = document.querySelector('#dropdown-menu-btn');
+const menu = document.querySelector('#dropdown-menu');
 const navbar = document.querySelector('#navbar');
 const listItem = document.querySelectorAll('.list-item');
 
 // Dropdown Menu Function - Start
 menuToggle.addEventListener('click', () => {
-  menuBtn.classList.toggle('menu-toggle-active');
-  menu.classList.toggle('menu-active');
+  menuBtn.classList.toggle('dropdown-menu-toggle-active');
+  menu.classList.toggle('dropdown-menu-active');
   }
 )
 listItem.forEach((link) => {
   link.addEventListener('click', () => {
-    menuBtn.classList.remove('menu-toggle-active');
-    menu.classList.remove('menu-active');
+    menuBtn.classList.remove('dropdown-menu-toggle-active');
+    menu.classList.remove('dropdown-menu-active');
   });
 });
 
