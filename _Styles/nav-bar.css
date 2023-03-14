@@ -57,7 +57,7 @@ padding: 0 15px;
 .navbar .navbar-list .list-item a:active{
   opacity: 0.6;
 }
-.navbar #menu-toggle {
+.navbar #dropdown-menu-toggle {
   display: none;
   cursor: pointer;
   border: none;
@@ -66,13 +66,13 @@ padding: 0 15px;
   transform: scale(1.1);
   transition: 400ms
 }
-.navbar #menu-toggle:hover {
+.navbar #dropdown-menu-toggle:hover {
   transform: scale(1.6);
 }
-.navbar #menu-btn {
+.navbar #dropdown-menu-btn {
   transition: 300ms;
 }
-.menu-toggle-active {
+.dropdown-menu-toggle-active {
   transform: rotate(90deg);
   color: goldenrod;
 }
@@ -175,10 +175,10 @@ padding: 0 15px;
     letter-spacing: 5px; 
     background-color: var(--grey-trans-hover);
   }
-  .navbar #menu-toggle {
+  .navbar #dropdown-menu-toggle {
     display: block;
   }
-  .menu-active {
+  .dropdown-menu-active {
     animation: menu-slide-in 750ms ease-in-out forwards;
   }
 }
